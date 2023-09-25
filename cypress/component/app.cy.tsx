@@ -3,12 +3,15 @@ import React from "react";
 import App from "../../src/App";
 import "../../src/index.css";
 
+beforeEach(()=>{
+  cy.mount(<App/>);
+});
+
 describe('app.cy.tsx', () => {
   it('first test', () => {
-    cy.mount(<App/>);
     cy.get('h1').should('have.text', 'Registration Form');
   });
-
+  
   it('second test', ():void=>{
     cy.get('p').should('have.text', 'Please fill out this form with the required information');
   });
@@ -20,8 +23,10 @@ describe('app.cy.tsx', () => {
       expect($fieldset).to.have.length(3);
     });
 
-    cy.get('form').find('fieldset').first().should(($fieldset:string[]):void=>{
-      expect($fieldset).to.have.length(4);
+    cy.get('form').find('fieldset').first().within(()=>{
+      cy.get('label').should(($label:string[])=>{
+        expect($label).to.have.length(4);
+      });
     });
   });
 })
