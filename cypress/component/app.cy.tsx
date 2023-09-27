@@ -26,7 +26,7 @@ describe('app.cy.tsx', () => {
     cy.get('form').find('fieldset').first().within(()=>{
       cy.get('label').should(($label:string[])=>{
         expect($label).to.have.length(4);
-      });
+      }).first().should('contain', 'Enter Your First Name:');
     });
   });
 })
