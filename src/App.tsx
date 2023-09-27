@@ -1,11 +1,8 @@
 import './App.css';
-import Credential from './components/namespaces/Credentials';
+import AccountTermsComponent from './components/AccountTermsComponent';
+import CredentialsComponent from './components/CredentialsComponent';
 
-const labelText:Credential.Icredential<string>[] = [{labelText: "Enter Your First Name:", id: "first-name", type: "text"}, {labelText: "Enter Your Last Name:", id: "last-name", type: "text"}, {labelText: "Enter Your Email:", id:"email", type: "email"}, {labelText: "Create a New Passwword:", id:"new-password", type:"password"}];
-
-const credentialObject = new Credential.CredentialClass<Credential.Icredential<string>>(labelText);
-const labelJSX = credentialObject.getAllCredentials();
-
+// Main Form
 const App = ():JSX.Element => {
   return (
     <>
@@ -13,10 +10,15 @@ const App = ():JSX.Element => {
       <p className="mb-2">Please fill out this form with the required information</p>
       <form action="#" method="post">
         <fieldset className="border-white border-2 p-2">
-          {labelJSX}
+          <CredentialsComponent />
         </fieldset>
-        <fieldset className="border-white border-2"></fieldset>
-        <fieldset className="border-white border-2"></fieldset>
+        <fieldset className="border-white border-2 p-2">
+          <AccountTermsComponent />
+        </fieldset>
+        <fieldset className="border-white border-2 p-2"></fieldset>
+        <div className="flex justify-center items-center mt-1">
+          <input className="bg-white text-black p-1 text-center w-max rounded hover:cursor-pointer flex justify-center shadow-black shadow-sm hover:shadow-none hover:border-solid hover:border-2 hover:border-white hover:bg-custom-bg hover:text-white" type="submit" value="Submit" />
+        </div>
       </form>
     </>
   );
