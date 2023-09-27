@@ -1,7 +1,8 @@
 namespace Credential{
     export interface Icredential<T> {
-        labelText: String;
+        labelText: string;
         id: T;
+        type: string;
       };
 
       
@@ -17,7 +18,7 @@ namespace Credential{
         public getAllCredentials():credentialJSX{
             return this.labelText.map((elem:U):JSX.Element=>{
                 return (
-                  <label className="block" htmlFor={elem.id}>{elem.labelText} <input id={elem.id}/></label>
+                  <label className="block mt-3 mb-3" htmlFor={elem.id}>{elem.labelText} <input className="text-black" id={elem.id} type={elem.type} /></label>
                 );
             })
         }
