@@ -6,7 +6,8 @@ export default {
       colors:{
         "twitter-blue": "#1DA1F2",
         "custom-bg": "#1b1b32",
-        "input-textarea-color": "#0a0a23"
+        "input-textarea-color": "#0a0a23",
+        "main-bg": "#1b1b32"
       },
     },
   },
