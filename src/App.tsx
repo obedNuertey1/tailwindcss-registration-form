@@ -10,7 +10,7 @@ const App = ():JSX.Element => {
   return (
     <>
       <FormDescriptComponent />
-      <form className="mt-0 mb-0 mr-auto ml-auto max-w-lg min-w-min w-7/12" action="#" method="post">
+      <form className="mt-0 mb-0 mr-auto ml-auto max-w-lg min-w-min w-7/12 p-5" action="#" method="post">
         <fieldset className="pt-5 pb-5 border-b-2 border-b-gray-700">
           <CredentialsComponent />
         </fieldset>
