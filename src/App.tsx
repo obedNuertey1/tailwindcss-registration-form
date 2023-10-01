@@ -1,31 +1,31 @@
 import './App.css';
 import { ComponentType, Suspense, lazy, useLayoutEffect } from 'react';
-import waiting from './components/functions/waiting';
+// import waiting from './components/functions/waiting';
 import loadingAnimation from './components/functions/loadingAnimation';
 
 const SubmitButtonComponent:any = lazy(async ():Promise<{default: ComponentType<JSX.Element>}>=>{
-  await waiting(10000);
+  // await waiting(10000);
   return await (import("./components/SubmitButtonComponent"));
 })
 
 const FormDescriptComponent:any = lazy(async ():Promise<{default: ComponentType<JSX.Element>}>=>{
-  await waiting(9000);
+  // await waiting(9000);
   return await (import("./components/FormDescriptComponent"));
 });
 
 const BiometricComponent:any = lazy(async ():Promise<{default: ComponentType<JSX.Element>}>=>{
-  await waiting(8000);
+  // await waiting(8000);
   return await (import("./components/BiometricComponent"));
 })
 
 
 const CredentialsComponent:any = lazy(async ():Promise<{default: ComponentType<JSX.Element>}>=>{
-  await waiting(7000);
+  // await waiting(7000);
   return await import("./components/CredentialsComponent");
 });
 
 const AccountTermsComponent:any = lazy(async ():Promise<{default: ComponentType<JSX.Element>}>=>{
-  await waiting(5000);
+  // await waiting(5000);
   return await import("./components/AccountTermsComponent");
 });
 
