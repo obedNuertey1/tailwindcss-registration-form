@@ -12,6 +12,9 @@ export default {
     },
   },
   plugins: [],
+  corePlugins:{
+    animation: ['responsive', 'hover']
+  }
 }
 
  
