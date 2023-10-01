@@ -6,9 +6,9 @@ export default():JSX.Element=>{
             <label className="block mt-3 mb-3" htmlFor="referrer">How did you hear about us?
             <select  className="text-black outline-blue-950 pl-1 pr-1 rounded" id="referrer">
                 <option value="">(select one)</option>
-                <option value="1">freeCodeCamp News</option>
-                <option value="2">freeCodeCamp YouTube Channel</option>
-                <option value="3">freeCodeCamp Forum</option>
+                <option value="1">News</option>
+                <option value="2">YouTube Channel</option>
+                <option value="3">Forum</option>
                 <option value="4">Other</option>
             </select>
             </label>
