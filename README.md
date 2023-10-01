@@ -1,6 +1,9 @@
 # React + TypeScript + Vite + Sass + Cypress Testing Support + Tailwindcss Complete Setup
 > # Feel Free to *Fork* this Repository
 
+> # visit this site
+[tailwindcss-registration-form](https://tailwindcss-registration-form.netlify.app/)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
