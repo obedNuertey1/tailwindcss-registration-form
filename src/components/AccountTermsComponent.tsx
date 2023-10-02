@@ -7,7 +7,7 @@ export default ():JSX.Element => {
         {
             type: "checkbox",
             id: "terms-and-conditions",
-            innerJSX: <>I accept the <a className="underline hover:text-blue-950" href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></>
+            innerJSX: <>I accept the <a className="underline hover:text-blue-950" href="#" >terms and conditions</a></>
         }
     ];
     
