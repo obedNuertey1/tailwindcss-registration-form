@@ -33,3 +33,4 @@ If you are developing a production application, we recommend updating the config
 ## Getting things started
 ```npm run dev``` to start the development server and
 ```npx cypress open``` to start writing tests
+> **This Project is Completed**
